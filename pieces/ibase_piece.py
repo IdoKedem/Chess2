@@ -11,4 +11,15 @@ class IBasePiece(ABC):
         self.cur_square = starting_square
         self._color = color
 
-        self._legal_squares: set[Square]
+        self._legal_squares: set[Square] = set()
+
+    @property
+    def color(self) -> Color:
+        return self._color
+
+    @property
+    def legal_squares(self) -> set[Square]:
+        return self._legal_squares
+
+    def update_legal_squares(self) -> None:
+        pass
