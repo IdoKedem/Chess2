@@ -23,3 +23,6 @@ class IBasePiece(ABC):
 
     def update_legal_squares(self) -> None:
         pass
+
+    def __str__(self) -> str:
+        return 'BasePiece'
