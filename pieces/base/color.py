@@ -1,6 +1,6 @@
-from enum import Enum
+from enum import StrEnum
 
 
-class Color(Enum):
+class Color(StrEnum):
     WHITE = 'White'
     BLACK = 'Black'
