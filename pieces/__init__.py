@@ -1,5 +1,5 @@
-from base import Color
-from base import IBasePiece
+from .base import Color
+from .base import IBasePiece
 from .bishop import Bishop
 from .king import King
 from .knight import Knight

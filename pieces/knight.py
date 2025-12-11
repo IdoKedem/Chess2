@@ -1,5 +1,5 @@
-from base import IBasePiece
 from board import Square
+from .base import IBasePiece
 
 
 class Knight(IBasePiece):
