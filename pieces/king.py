@@ -1,5 +1,5 @@
+from base import IBasePiece
 from board import Square
-from .ibase_piece import IBasePiece
 
 
 class King(IBasePiece):

@@ -1,5 +1,5 @@
 from board import Square
-from .ibase_piece import IBasePiece
+from .base import IBasePiece
 
 
 class Bishop(IBasePiece):
