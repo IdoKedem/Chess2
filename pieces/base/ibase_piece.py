@@ -21,12 +21,8 @@ class IBasePiece(ABC):
     def legal_squares(self) -> set[Square]:
         return self._legal_squares
 
-    @classmethod
-    def _get_class_name(cls) -> str:
-        return cls.__name__
-
     def update_legal_squares(self) -> None:
         pass
 
     def __str__(self) -> str:
-        return f'{self.color} {self._get_class_name()} on {self.cur_square}'
+        return f'{self.color} {self.__class__.__name__} on {self.cur_square}'
