@@ -7,3 +7,6 @@ from .rank import Rank
 class Square(BaseModel):
     rank: Rank
     column: Column
+
+    def __str__(self):
+        return f'{self.rank + self.column}'
